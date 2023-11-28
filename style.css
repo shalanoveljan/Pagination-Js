@@ -33,17 +33,17 @@ body{
   user-select: none;
   transition: all 0.3s ease;
 }
-.pagination ul li.numb{
+.pagination ul li.circle{
   list-style: none;
   height: 45px;
   width: 45px;
   margin: 0 3px;
   border-radius: 50%;
 }
-.pagination ul li.numb.first{
+.pagination ul li.circle.first{
   margin: 0px 3px 0 -5px;
 }
-.pagination ul li.numb.last{
+.pagination ul li.circle.last{
   margin: 0px -5px 0 3px;
 }
 .pagination ul li.dots{
@@ -55,7 +55,7 @@ body{
   border-radius: 50px;
 }
 .pagination li.active,
-.pagination ul li.numb:hover,
+.pagination ul li.circle:hover,
 .pagination ul li:first-child:hover,
 .pagination ul li:last-child:hover{
   color: #fff;

@@ -15,7 +15,7 @@ function createPagination(totalPages, page){
   }
 
   if(page > 2){ 
-    liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
+    liTag += `<li class="first circle" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
     if(page > 3){
       liTag += `<li class="dots"><span>...</span></li>`;
     }
@@ -45,14 +45,14 @@ function createPagination(totalPages, page){
     }else{ 
       active = "";
     }
-    liTag += `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`;
+    liTag += `<li class="circle ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`;
   }
 
   if(page < totalPages - 1){ 
     if(page < totalPages - 2){ 
       liTag += `<li class="dots"><span>...</span></li>`;
     }
-    liTag += `<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span>${totalPages}</span></li>`;
+    liTag += `<li class="last circle" onclick="createPagination(totalPages, ${totalPages})"><span>${totalPages}</span></li>`;
   }
 
   if (page < totalPages) { 
